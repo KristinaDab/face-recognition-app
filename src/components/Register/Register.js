@@ -24,10 +24,11 @@ class Register extends React.Component {
     this.setState({ password: event.target.value });
   };
 
-  // We do a call to the server here (smart-brain-api)
+  // We do a call to the server here (smart-brain-api) which is 
+  // now deployed on the heroku servers
   // If response is a 'success', then we allow the access to the home page
   onSubmitSignIn = () => {
-    fetch("http://localhost:3000/register", {
+    fetch("https://immense-caverns-59452.herokuapp.com/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
