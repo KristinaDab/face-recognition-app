@@ -1,3 +1,5 @@
+NOTE: face-recognition-api is necesarry to run this app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 This project needs the face-recognition-api for the server
